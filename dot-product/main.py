@@ -1,5 +1,9 @@
 def run(u: list, v: list) -> float | None:
     # TODO
+    if len(u) != len(v):
+        return None
+    
+
     return dprod
 
 
