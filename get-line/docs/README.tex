@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{article}
+\input{../../.common/preamble.sty}
+
+\title{\textbf{Han cantado línea}}
+
+\begin{document}
+\maketitle
+
+Dado un \textbf{fichero de texto} y un \textbf{número de línea}, encuentra la línea que corresponde.
+
+\subsection*{Notas}
+
+\begin{itemize}
+    \item Si el número de línea indicado no corresponde con ninguno del fichero se debe devolver \mintinline{python}{None}.
+    \item Ten en cuenta que la primera línea debe empezar en 1.
+\end{itemize}
+
+\subsection*{Ejemplo}
+
+Supongamos que el fichero contiene el siguiente texto:
+
+\begin{minted}[
+    linenos,
+    numbersep=5pt,
+    frame=single,
+    framesep=3mm,
+]{text}
+Beautiful is better than ugly
+Explicit is better than implicit
+Simple is better than complex
+Complex is better than complicated
+Flat is better than nested
+Sparse is better than dense
+Readability counts
+Special cases arent special enough to break the rules
+Although practicality beats purity
+Errors should never pass silently
+Unless explicitly silenced
+In the face of ambiguity, refuse the temptation to guess
+There should be one—and preferably only one—obvious way to do it
+Although that way may not be obvious at first unless you're Dutch
+Now is better than never
+Although never is often better than right now
+If the implementation is hard to explain, it's a bad idea
+If the implementation is easy to explain, it may be a good idea
+Namespaces are one honking great idea—let's do more of those
+\end{minted}
+
+Si el número de línea es 3, la salida sería:
+
+\begin{minted}{text}
+Simple is better than complex
+\end{minted}
+
+\end{document}

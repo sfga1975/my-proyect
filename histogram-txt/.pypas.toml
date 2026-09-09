@@ -1,0 +1,14 @@
+version = "0.1.5"
+slug = "histogram-txt"
+bundle = [ "/docs/README.pdf", "/tests", "/main.py", "/vendor.py", "/data/*input*", "/data/*expected*",]
+backup_on_update = [ "/main.py",]
+delete_on_update = [ "/data/*output*",]
+exclude_from_zip = [ "*.pyc", ".DS_Store", "/.git", "*.bak", "*cache*", "/args.py", "/data/*output*",]
+
+[release_notes]
+"0.1.0" = "Primera versión"
+"0.1.1" = "Ignora carpetas cache al crear el zip"
+"0.1.2" = "Añade carpeta faltante de datos"
+"0.1.3" = "Ignora archivos de salida"
+"0.1.4" = "Ignora args.py al comprimir ejercicio"
+"0.1.5" = "Ajusta gestión de ficheros output para tests"

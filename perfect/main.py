@@ -1,0 +1,10 @@
+
+def is_perfect(n: int) -> bool:
+    # TODO
+
+
+# DO NOT TOUCH THE CODE BELOW
+if __name__ == '__main__':
+    import vendor
+
+    vendor.launch(is_perfect)

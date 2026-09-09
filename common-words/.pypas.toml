@@ -1,0 +1,15 @@
+version = "0.1.6"
+slug = "common-words"
+bundle = [ "/docs/README.pdf", "/tests", "/main.py", "/vendor.py", "/data/*input*", "/data/*expected*",]
+backup_on_update = [ "/main.py",]
+delete_on_update = [ "/data/*output*",]
+exclude_from_zip = [ "*.pyc", ".DS_Store", "/.git", "*.bak", "*cache*", "/args.py", "/data/*output*",]
+
+[release_notes]
+"0.1.0" = "Primera versión"
+"0.1.1" = "Ignora carpetas cache al crear el zip"
+"0.1.2" = "Añade carpeta faltante de datos"
+"0.1.3" = "Ignora archivos de salida"
+"0.1.4" = "No contempla combinaciones ya vistas"
+"0.1.5" = "Ignora args.py al comprimir ejercicio"
+"0.1.6" = "Ajusta gestión de ficheros output para tests"

@@ -1,0 +1,4 @@
+This is awesome
+Python is awesome
+Keep it simple
+Python is simple
